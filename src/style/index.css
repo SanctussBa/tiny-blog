@@ -2,18 +2,29 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 html {
   font-size: 1rem;
 }
 
+hr {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border: 1px solid #8338ec;
+  border-radius: 5px;
+  width: 70%;
+}
+
 .main--container {
   width: 80vw;
   margin-left: auto;
   margin-right: auto;
-  
+  background-color: rgb(194, 205, 212);
   -webkit-box-shadow: 0px 0px 65px -17px rgba(0, 0, 0, 0.63);
   -moz-box-shadow: 0px 0px 65px -17px rgba(0, 0, 0, 0.63);
   box-shadow: 0px 0px 65px -17px rgba(0, 0, 0, 0.63);
@@ -22,29 +33,28 @@ html {
 .all-posts-container {
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .header--navigation {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #666f88;
+  background-color: rgb(99, 69, 168);
   height: 70px;
   color: white;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  
 }
 
 .navigation--header {
   margin-bottom: 20px;
   margin-top: 10px;
   border-bottom: 3px solid #666f88;
-  
 }
 
 .navigation--title {
@@ -69,15 +79,24 @@ html {
 .post-card {
   width: 300px;
   height: 350px;
-  border: 1px solid white;
+  margin-top: 20px;
+  margin-bottom: 20px;
   padding: 10px;
   background-color: rgb(233, 233, 233);
   border-radius: 7px;
+  -webkit-box-shadow: 5px 5px 14px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 5px 14px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 5px 14px -4px rgba(0, 0, 0, 0.75);
+  border: 1px solid rgb(190, 190, 190);
+
+  background-color: rgb(223, 221, 221);
 }
 
 .post-title {
   height: 60px;
   text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  
 }
 .post-card--container {
   position: relative;
@@ -107,7 +126,6 @@ html {
 
 .title--container {
   padding-top: 10px;
-  padding-bottom: 10px;
 }
 
 .section--title {
@@ -128,24 +146,9 @@ html {
   align-items: center;
 }
 
-.crime {
-  background-color: #34a0a4;
-}
-.mystery {
-  background-color: rgb(207, 153, 82);
-}
-.fiction {
-  background-color: cornflowerblue;
-}
-.love {
-  background-color: rgb(93, 170, 93);
-}
-.classic {
-  background-color: rgb(194, 110, 194);
-}
-
 .all-posts-card {
-  width: 700px;
+  width: 300px;
+  height: auto;
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 10px;
@@ -168,10 +171,6 @@ html {
 .show-posts--triger:hover {
   background-color: white;
   color: #666f88;
-}
-
-.long-card {
-  padding-bottom: 30px;
 }
 
 .arrow-icon {
@@ -221,13 +220,13 @@ html {
   left: 0;
   border-radius: 7px;
   overflow: hidden;
-  border: 1px solid rgb(102, 111, 136);
+  border: 1px solid rgb(99, 69, 168);
   transition: 0.3s ease-in-out;
 }
 
 .category-item {
   padding: 10px 30px;
-  background-color: rgb(102, 111, 136);
+  background-color: rgb(99, 69, 168);
   color: white;
   border-bottom: 1px solid white;
   text-transform: capitalize;
@@ -236,7 +235,7 @@ html {
 
 .category-item:hover {
   background-color: white;
-  color: rgb(102, 111, 136);
+  color: rgb(99, 69, 168);
 }
 
 .select-arrow {
@@ -265,5 +264,20 @@ html {
   text-transform: capitalize;
   font-family: "Rubik Iso", cursive;
   font-size: 2rem;
-  color: #34a0a4;
+  color: rgb(99, 69, 168);
+}
+
+.body-text {
+  font-size: 0.9rem;
+  padding-left: 10px;
+  padding-right: 10px;
+  color:rgb(102, 111, 136)
+}
+
+.text-container {
+  overflow: hidden;
+}
+
+.text-centered {
+  text-align: center;
 }

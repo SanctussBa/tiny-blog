@@ -9,19 +9,19 @@ type PostCardProps = {
 const PostCard = ({ post, genre, showAllPosts }: PostCardProps) => {
   return (
     <div
-      className={
-        showAllPosts ? "long-card post-card--container" : "post-card--container"
-      }
+      className="post-card--container"
     >
-      <div>
+      <div className="text-container">
         <div className="title--container">
           <h3 className="post-title">
             {post.title}
             {genre}
           </h3>
+          
         </div>
+        <hr></hr>
         <div>
-          <p>{post.body}</p>
+          <p className="body-text">{post.body}</p>
         </div>
       </div>
 

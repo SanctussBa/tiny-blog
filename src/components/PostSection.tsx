@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Post } from "../types";
+import { Genre, Post } from "../types";
 import PostCard from "./PostCard";
 
 type PostSectionProps = {
@@ -12,12 +12,22 @@ const PostSection = ({
   listOfPosts,
   genre,
   showAllPosts,
+  
 }: PostSectionProps) => {
   const [showSection, setShowSection] = useState<boolean>(true);
+
+  const backgroundColor = {
+    backgroundColor: `${Genre[genre]}`,
+  }
+  
   return (
     <div>
-      <div className={genre + " section--title--container"}>
-        <h2 className={genre + " section--title"}>{genre}</h2>
+      <div
+        className=" section--title--container"
+        style={backgroundColor}
+        
+      >
+        <h2 className=" section--title" style={backgroundColor}>{genre} </h2>
         <i
           className={
             showSection
@@ -33,9 +43,10 @@ const PostSection = ({
       <div
         className={
           !showSection
-            ? "hide-section " + genre + " post-section--container"
-            : genre + " post-section--container"
+            ? "hide-section post-section--container"
+            : " post-section--container"
         }
+        style={backgroundColor}
       >
         {listOfPosts.map((post, index) => (
           <div className="post-card" key={index}>

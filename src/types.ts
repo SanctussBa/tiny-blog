@@ -7,13 +7,15 @@ export type Post = {
     userId: number
 }
 
+interface IGenre {
+    [key: string]: string
+}
 
-// export type Genre = ["mystery", "love", "fiction", "crime", "classic"]
-export enum Genre {
-    mystery = "red",
-    love = "blue",
-    fiction = "yellow",
-    crime = "orange",
-    classic = "green"
+export const Genre: IGenre = {
+    mystery: "#3B3486",
+    love: "#61764B",
+    fiction: "#9A1663",
+    crime: "#2192FF",
+    classic:"#937DC2"
 }
 

@@ -39,6 +39,7 @@ function App() {
     fetchPosts();
     
     
+    
   }, [])
   let component;
   if (postCategory === "all") {
@@ -46,8 +47,9 @@ function App() {
       <>
         {showAllPosts ? (
           <>
+          <div className="all-posts-container">
             {listOfPosts.map((posts, index) => (
-              <section className="all-posts-card" key={index}>
+              <section className="post-card" key={index}>
                 <PostCard
                   post={posts}
                   genre={posts.tags[0]}
@@ -55,6 +57,7 @@ function App() {
                 />
               </section>
             ))}
+            </div>
           </>
         ) : (
           <>
@@ -76,11 +79,12 @@ function App() {
   } else {
     component = (
       <>
-      <h2>Category: <span className="span-category-title">{postCategory}</span></h2>
+      <h2 className="text-centered">Category: <span className="span-category-title">{postCategory}</span></h2>
+      <div className="all-posts-container">
         {listOfPosts
           .filter((posts) => posts.tags.includes(postCategory))
           .map((p, index) => (
-            <section className="all-posts-card" key={index}>
+            <section className="post-card" key={index}>
               <PostCard
                 post={p}
                 genre={p.tags[0]}
@@ -88,6 +92,7 @@ function App() {
               />
             </section>
           ))}
+          </div>
       </>
     );
   }
@@ -102,7 +107,7 @@ function App() {
         showCategoryMenu={showCategoryMenu}
         setShowCategoryMenu={setShowCategoryMenu}
       />
-      <div className="all-posts-container">{component}</div>
+      <div >{component}</div>
     </main>
   );
 }

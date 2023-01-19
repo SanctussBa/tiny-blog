@@ -1,46 +1,50 @@
-# Getting Started with Create React App
+# Tiny Blog | React | Typescript | Front-End
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Screenshots of this app:
 
-## Available Scripts
+![](https://github.com/SanctussBa/tiny-blog/blob/master/screenshot1.jpg?raw=true)
+![](https://github.com/SanctussBa/tiny-blog/blob/master/screenshot2.jpg?raw=true)
 
-In the project directory, you can run:
+## What is this project about?
 
-### `npm start`
+* This application is using fake posts from dummyjson API - "https://dummyjson.com/posts". User can read posts divided by genre.
+* This project serves as React, TypeScript learning project.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## What technologies were used?
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+* This `Front-End` application using `React` with `TypeScript`
+* `FontAwesome` for icons
+* `Google Fonts` for text styling
+* 3rd party API for posts - `"https://dummyjson.com/posts"`
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## How you can clone and run this project?
 
-### `npm run build`
+From your command line, first clone this repo:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+# Clone this repo
+>>> git clone https://github.com/SanctussBa/e-commerce-React-TS
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Go into the repository
+>>> cd .\e-commerce-React-TS\
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Remove current origin repository
+>>> git remote remove origin
 
-### `npm run eject`
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Run React App
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+1. Go into `TinyBlog/blog/` directory
+2. Install all packages and dependancies
+```
+>>> npm i
+```
+3. Start application
+```
+>>> npm start
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+App should be running by its own. If it is not running Open http://localhost:3000 to view it in the browser.

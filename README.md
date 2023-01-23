@@ -20,7 +20,7 @@ export const Genre: IGenre = {
     fiction: "#9A1663",
     crime: "#2192FF",
     classic:"#937DC2"
-    // add new section here
+    // [name of new section]: [color for section's background]
 }
 
 ```

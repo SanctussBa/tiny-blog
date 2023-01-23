@@ -10,11 +10,24 @@
 * This application is using fake posts from dummyjson API - "https://dummyjson.com/posts". User can read posts divided by genre.
 * This project serves as React, TypeScript learning project.
 
+## Important Feature
+- Data display by genre is dynamic. Meaning, to add another Section just need to add new line in code with new section. 
+In types.ts file:
+```Typescript
+export const Genre: IGenre = {
+    mystery: "#3B3486",
+    love: "#61764B",
+    fiction: "#9A1663",
+    crime: "#2192FF",
+    classic:"#937DC2"
+    // add new section here
+}
+
+```
+
 ## What technologies were used?
 
 * This `Front-End` application using `React` with `TypeScript`
-* `FontAwesome` for icons
-* `Google Fonts` for text styling
 * 3rd party API for posts - `"https://dummyjson.com/posts"`
 
 
@@ -24,10 +37,10 @@ From your command line, first clone this repo:
 
 ```
 # Clone this repo
->>> git clone https://github.com/SanctussBa/e-commerce-React-TS
+>>> git clone https://github.com/SanctussBa/tiny-blog
 
 # Go into the repository
->>> cd .\e-commerce-React-TS\
+>>> cd .\tiny-blog\
 
 # Remove current origin repository
 >>> git remote remove origin
